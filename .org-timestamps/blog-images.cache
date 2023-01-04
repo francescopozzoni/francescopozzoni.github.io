@@ -1,0 +1,5 @@
+(setq org-publish-cache (make-hash-table :test 'equal :weakness nil :size 100))
+(puthash ":project:" "blog-images" org-publish-cache)
+(puthash ":cache-file:" "/home/fpozzoni/Projects/MyOrgBlog/.org-timestamps/blog-images.cache" org-publish-cache)
+(puthash "X702b5b73ecc53f47dbf8bfa617f19422d095950b" '(25525 26928 821342 626000) org-publish-cache)
+(puthash "X08fe6c37ea4c2945056cf8efa64ea0d3d12dca54" '(25525 26928 821342 626000) org-publish-cache)
