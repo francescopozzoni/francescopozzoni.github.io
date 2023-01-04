@@ -1,0 +1,5 @@
+#+title: Page not found
+
+* Error 404
+
+The page requested is nowhere to be found.

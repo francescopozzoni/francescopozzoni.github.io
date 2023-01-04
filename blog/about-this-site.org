@@ -1,0 +1,37 @@
+#+title: About this site
+#+date: 2022-12-27
+
+* Acknowledgements
+
+This site is built entirely using Emacs Org mode and its publishing
+capabilities. To understand how this works please take a look at the
+corresponding Github [[https://github.com/francescopozzoni/francescopozzoni.github.io][project]].
+
+In my journey on learning Emacs and building this little project I read a lot of
+material and followed some tutorials. Here are the ones related to blogging that
+I personally found more interesting, I wanna thank the authors for providing
+such cool material:
+- https://taingram.org/blog/org-mode-blog.html
+- https://opensource.com/article/20/3/blog-emacs
+- https://systemcrafters.net/publishing-websites-with-org-mode/building-the-site/
+
+Finally before moving on I want to thank my friend @rookiebwoy that always
+inspires me on how a cool place the internet is, here you can find his beautiful
+[[https://www.rookiebwoy.eu/][website]].
+
+* How it works from my side
+
+I don't plan to explain how I build this site because I think that is already
+well documented in the resources that I linked above. If I'll change my mind in
+the future I'll make sure to create a proper post.
+
+* How it is currently hosted
+
+Again this is my first post and I don't want to make it too long so here is a
+dedicated [[./github-pages-plus-google-domain.html][link]].
+
+#+begin_src c
+  int main(void) {
+    return 0;
+  }
+#+end_src

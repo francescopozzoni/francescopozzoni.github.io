@@ -1,0 +1,22 @@
+#+title: My Website
+
+* Who am i
+
+Hi there I'm Francesco, a random guy who lives in Italy. Here is a self portrait
+of me.
+
+#+attr_org: :width 500px
+#+caption: Self portrait of me.
+[[file:assets/self-portrait.png]]
+
+* Where are you
+
+It seems like you are currently navigating the internet and you made it to my
+website. Here I want to put some stuff that I do. I hope you have a nice stay
+and find something useful.
+
+* Latest posts
+
+#+HTML: <div class="latest-posts">
+#+INCLUDE: blog/sitemap.org :lines "3-8"
+#+HTML: </div>

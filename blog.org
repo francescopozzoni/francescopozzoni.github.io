@@ -1,0 +1,7 @@
+#+title: Blog
+
+* All my posts
+
+#+HTML: <div class="sitemap">
+#+INCLUDE: blog/sitemap.org :lines "3-"
+#+HTML: </div>
