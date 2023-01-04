@@ -62,6 +62,10 @@ p {
     text-align: justify;
 }
 
+a {
+    overflow-wrap: break-word;
+}
+
 div.latest-posts > ul, div.sitemap > ul {
     list-style-type: none;
     padding: 0;

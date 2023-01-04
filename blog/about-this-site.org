@@ -29,9 +29,3 @@ the future I'll make sure to create a proper post.
 
 Again this is my first post and I don't want to make it too long so here is a
 dedicated [[./github-pages-plus-google-domain.html][link]].
-
-#+begin_src c
-  int main(void) {
-    return 0;
-  }
-#+end_src
