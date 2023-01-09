@@ -4,8 +4,10 @@
 (require 'ox)
 (require 'ox-html)
 
-(setq org-publish-timestamp-directory (convert-standard-filename "./.org-timestamps/")
+(setq org-publish-timestamp-directory
+      (convert-standard-filename "./.org-timestamps/")
       org-src-fontify-natively t)
+
 (setq org-html-htmlize-output-type 'css)
 
 (setq org-html-preamble "<nav id=\"navbar\">
@@ -35,7 +37,7 @@
          :html-head-include-default-style nil
          :html-viewport nil
          ;; style.css link
-         :html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"assets/style.css\"/>\n<link rel=\"shortcut icon\" href=\"assets/favicon.ico\"/>
+         :html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/style.css\"/>\n<link rel=\"shortcut icon\" href=\"assets/favicon.ico\"/>
 <meta content=\"width=device-width, initial-scale=1\" name=\"viewport\" />"
          ;; no info on pages
          :with-author nil
