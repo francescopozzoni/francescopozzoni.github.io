@@ -1,4 +1,5 @@
 #+TITLE: Sitemap for project blog
 
-- [[file:about-this-site.org][About this site]]
-- [[file:github-pages-plus-google-domain.org][Github Pages plus Google Domain]]
+- [[file:cheap-wooden-stuff.org][Cheap wooden stuff]] {{{div(2023-01-20)}}}
+- [[file:github-pages-plus-google-domain.org][Github Pages plus Google Domain]] {{{div(2023-01-04)}}}
+- [[file:about-this-site.org][About this site]] {{{div(2022-12-27)}}}

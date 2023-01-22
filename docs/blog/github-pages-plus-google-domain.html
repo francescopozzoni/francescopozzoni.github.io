@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2023-01-09 Mon 06:59 -->
+<!-- 2023-01-22 -->
 <meta charset="utf-8" />
 <title>Github Pages plus Google Domain</title>
-<meta name="author" content="Francesco Pozzoni" />
 <meta name="generator" content="Org Mode" />
-<link rel="stylesheet" type="text/css" href="../assets/style.css"/>
-<link rel="shortcut icon" href="../assets/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/assets/style.css"/>
+<link rel="shortcut icon" href="assets/favicon.ico"/>
 <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 <body>
 <div id="preamble" class="status">
-<nav id="navbar">
-  <div id="navbar-inner">
-    <a href="/">HOME</a> &nbsp;
-    <a href="/blog.html">BLOG</a>
-  </div>
-</nav>
+<nav id="navbar">  <div id="navbar-inner">    <a href="/">HOME</a> &nbsp;    <a href="/blog.html">BLOG</a>  </div></nav>
 </div>
 <div id="content" class="content">
 <header>
 <h1 class="title">Github Pages plus Google Domain</h1>
 </header>
-<div id="outline-container-org0b8ab02" class="outline-2">
-<h2 id="org0b8ab02">Hosting on a budget</h2>
-<div class="outline-text-2" id="text-org0b8ab02">
+<div id="outline-container-org81d940e" class="outline-2">
+<h2 id="org81d940e">Hosting on a budget</h2>
+<div class="outline-text-2" id="text-org81d940e">
 <p>
 I was wondering on how I could easily put this website online without having to
 pay for services that I basically don't use. Even with the cheapest plan hosting
@@ -49,9 +43,9 @@ paid, am I wrong?
 </div>
 </div>
 
-<div id="outline-container-org3eab588" class="outline-2">
-<h2 id="org3eab588">Hosting is good but the domain name?</h2>
-<div class="outline-text-2" id="text-org3eab588">
+<div id="outline-container-orgb871323" class="outline-2">
+<h2 id="orgb871323">Hosting is good but the domain name?</h2>
+<div class="outline-text-2" id="text-orgb871323">
 <p>
 Github Pages gives your website a domain name that is <code>username.github.io</code> which
 is not what I wanted for my website domain name.
@@ -71,9 +65,9 @@ pages. Pretty cheap in my opinion.
 </div>
 </div>
 
-<div id="outline-container-orgeac41b1" class="outline-2">
-<h2 id="orgeac41b1">How to do the same</h2>
-<div class="outline-text-2" id="text-orgeac41b1">
+<div id="outline-container-orgd687b16" class="outline-2">
+<h2 id="orgd687b16">How to do the same</h2>
+<div class="outline-text-2" id="text-orgd687b16">
 <p>
 The first step is to create a repository on Github named
 <code>yourusername.github.io</code>, in my case <code>francescopozzoni.github.io</code>.
@@ -84,16 +78,16 @@ Then, for the sake of example, you can create a simple html webpage.
 </p>
 
 <div class="org-src-container">
-<pre class="src src-bash"><span class="org-comment-delimiter"># </span><span class="org-comment">clone repo locally</span>
+<pre class="src src-bash"># clone repo locally
 git clone https://github.com/yourusername/yourusername.github.io
 
-<span class="org-comment-delimiter"># </span><span class="org-comment">create the index.html file</span>
-<span class="org-builtin">cd</span> yourusername.github.io
-<span class="org-builtin">echo</span> <span class="org-string">"&lt;html&gt;&lt;body&gt;Hello, World!&lt;/body&gt;&lt;/html&gt;"</span> &gt; index.html
+# create the index.html file
+cd yourusername.github.io
+echo "&lt;html&gt;&lt;body&gt;Hello, World!&lt;/body&gt;&lt;/html&gt;" &gt; index.html
 
-<span class="org-comment-delimiter"># </span><span class="org-comment">push the first page on Github</span>
+# push the first page on Github
 git add .
-git commit -m <span class="org-string">"First commit"</span>
+git commit -m "First commit"
 git push -u origin main
 </pre>
 </div>
@@ -111,7 +105,7 @@ we'll move straight forward to the point process.
 </p>
 
 
-<figure id="org830b1ad">
+<figure id="org29dde5d">
 <img src="github-pages-plus-google-domain_imgs/2023-01-04_10-13-49_screenshot.png" alt="2023-01-04_10-13-49_screenshot.png">
 
 </figure>
@@ -160,7 +154,7 @@ enforce HTTPS flag as the connection is made secure in this way.
 </p>
 
 
-<figure id="org572aacc">
+<figure id="org82e93d0">
 <img src="github-pages-plus-google-domain_imgs/2023-01-04_10-15-34_screenshot.png" alt="2023-01-04_10-15-34_screenshot.png">
 
 </figure>
@@ -173,9 +167,9 @@ browser and typing your <code>domainname.domainextension</code>.
 </div>
 </div>
 
-<div id="outline-container-orgfa44e0f" class="outline-2">
-<h2 id="orgfa44e0f">More in depth</h2>
-<div class="outline-text-2" id="text-orgfa44e0f">
+<div id="outline-container-orgc1660f0" class="outline-2">
+<h2 id="orgc1660f0">More in depth</h2>
+<div class="outline-text-2" id="text-orgc1660f0">
 <ul class="org-ul">
 <li>GithHub Pages Quickstart <a href="https://docs.github.com/en/pages/quickstart">https://docs.github.com/en/pages/quickstart</a></li>
 </ul>
@@ -183,16 +177,7 @@ browser and typing your <code>domainname.domainextension</code>.
 </div>
 </div>
 <div id="postamble" class="status">
-<footer>
-  <div class="license-container">
-    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-    <img alt="Creative Commons Licence" style="border-width:0; width:120px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-  </div>
-  <div class="author-container">
-    <div class="author">2022, 2023 Francesco Pozzoni.
-    </div>
-  </div>
-</footer>
+<footer>   <div class="license-container">    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">    <img alt="Creative Commons Licence" style="border-width:0; width:120px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />    </a>  </div>  <div class="author-container">    <div class="author">2022 - 2023 Francesco Pozzoni.    </div>  </div></footer>
 </div>
 </body>
 </html>

@@ -1,5 +1,5 @@
 #+title: Github Pages plus Google Domain
-#+date: 2023-01-04
+#+date: <2023-01-04>
 
 * Hosting on a budget
 

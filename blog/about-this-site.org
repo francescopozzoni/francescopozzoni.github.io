@@ -1,5 +1,5 @@
 #+title: About this site
-#+date: 2022-12-27
+#+date: <2022-12-27>
 
 * Acknowledgements
 
