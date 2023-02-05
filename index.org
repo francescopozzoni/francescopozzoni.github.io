@@ -1,10 +1,9 @@
-#+title: My Website
-
 #+HTML: <style>
 #+HTML:   .metadata-container {display: none;}
 #+HTML:   footer {justify-content: right;}
 #+HTML: </style>
 
+#+title: My Website
 
 * Who am i
 

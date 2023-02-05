@@ -1,9 +1,9 @@
-#+title: Blog
-
 #+HTML: <style>
 #+HTML:   .metadata-container {display: none;}
 #+HTML:   footer {justify-content: right;}
 #+HTML: </style>
+
+#+title: Blog
 
 * All my posts
 
