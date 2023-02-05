@@ -4,38 +4,24 @@
 
 ;; different postamble for different publish component is not working I have to
 ;; investigate this behaviour
-(setq pages-html-postamble (concat "<footer> "
-                                   "  <div class=\"license-container\">"
-                                   "    <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/4.0/\">"
-                                   "    <img alt=\"Creative Commons Licence\" style=\"border-width:0; width:120px;\" src=\"https://i.creativecommons.org/l/by/4.0/88x31.png\" />"
-                                   "    </a>"
-                                   "  </div>"
-                                   "  <div class=\"author-container\">"
-                                   "    <div class=\"author\">2022 - " (format-time-string "%Y") " Francesco Pozzoni."
-                                   "    </div>"
-                                   "  </div>"
-                                   "</footer>")
+(setq org-html-head (concat "<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/style.css\"/>\n"
+                            "<link rel=\"shortcut icon\" href=\"assets/favicon.ico\"/>\n"
+                            "<meta content=\"width=device-width, initial-scale=1\" name=\"viewport\" />\n")
 
-      pages-html-head (concat "<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/style.css\"/>\n"
-                              "<link rel=\"shortcut icon\" href=\"assets/favicon.ico\"/>\n"
-                              "<meta content=\"width=device-width, initial-scale=1\" name=\"viewport\" />\n")
-
-      blog-html-postamble (concat "<footer>"
-                                  "  <div class=\"metadata-container\">Created on: %T</div>"
-                                  "  <div class=\"license-container\">"
-                                  "    <a rel=\"license\" href=\"http://creativecommons.org/licenses/by/4.0/\">"
-                                  "    <img alt=\"Creative Commons Licence\" style=\"border-width:0; width:120px;\" src=\"https://i.creativecommons.org/l/by/4.0/88x31.png\" />"
-                                  "</a>"
-                                  "  </div>"
-                                  "  <div class=\"author-container\">"
-                                  "    <div class=\"author\">2022 - " (format-time-string "%Y") " Francesco Pozzoni."
-                                  "    </div>"
-                                  "  </div>"
-                                  "</footer>")
-
-      blog-html-head (concat "<link rel=\"stylesheet\" type=\"text/css\" href=\"..//assets/style.css\"/>\n"
-                             "<link rel=\"shortcut icon\" href=\"../assets/favicon.ico\"/>\n"
-                             "<meta content=\"width=device-width, initial-scale=1\" name=\"viewport\" />\n"))
+      html-postamble  (concat "<footer>"
+                              "  <div class=\"metadata-container\">"
+                              "    <div class=\"created-on\">Created on: %d</div>"
+                              "    <div class=\"modified-on\">Last updated on: %C</div>"
+                              "  </div>"
+                              "  <div class=\"license-container\">"
+                              "   <a rel=\"https://validator.w3.org/check?uri=referer\"><img src=\"/assets/valid_html_blue.png\"></a>"
+                              "   <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/\"><img alt=\"Creative Commons Licence\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-sa/4.0/80x15.png\" /></a>"
+                              "    <div class=\"author\">2022 - " (format-time-string "%Y") " Francesco Pozzoni."
+                              "    </div>"
+                              "  </div>"
+                              "</footer>")
+      
+      org-html-postamble-format `(("en" ,html-postamble)))
 
 (setq org-html-doctype "html5"
       org-html-html5-fancy t
@@ -58,7 +44,6 @@
       org-publish-timestamp-directory (convert-standard-filename "./.org-timestamps/")
       org-src-fontify-natively t)
 
-
 ;; Thanks to Thomas Ingram I found this in this email thread
 ;; https://lists.gnu.org/archive/html/emacs-orgmode/2019-07/msg00060.html
 (setq org-export-global-macros
@@ -77,17 +62,7 @@
               ))))
 
 (setq org-publish-project-alist
-      `(("pages"
-         :html-head ,pages-html-head
-         :html-postamble ,pages-html-postamble
-         :base-directory "."
-         :base-extension "org"
-         :publishing-directory "docs/"
-         :publishing-function org-html-publish-to-html
-         :recursive t)
-        ("blog"
-         :html-head ,blog-html-head
-         :html-postamble ,blog-html-postamble
+      `(("blog"
          :base-directory "blog/"
          :base-extension "org"
          :publishing-directory "docs/blog/"
@@ -97,6 +72,12 @@
          :sitemap-filename "sitemap.org"
          :sitemap-format-entry org-sitemap-custom-entry-format
          :sitemap-sort-files anti-chronologically)
+        ("pages"
+         :base-directory "."
+         :base-extension "org"
+         :publishing-directory "docs/"
+         :publishing-function org-html-publish-to-html
+         :recursive t)
         ("blog-images"
          :base-directory "blog/"
          :base-extension "jpg\\|gif\\|png"

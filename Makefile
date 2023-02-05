@@ -15,7 +15,9 @@ publish_no_init: publish.el
 clean:
 	@echo "Cleaning up.."
 	@rm -rvf *.elc
-	@rm -rvf docs
+	@rm -rvf docs/*.html
+	@rm -rvf docs/assets/
+	@rm -rvf docs/blog/
 	@rm -rvf ./.org-timestamps/*
 	@rm -rvf sitemap.org
 

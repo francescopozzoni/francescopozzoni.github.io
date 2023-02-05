@@ -1,5 +1,10 @@
 #+title: Blog
 
+#+HTML: <style>
+#+HTML:   .metadata-container {display: none;}
+#+HTML:   footer {justify-content: right;}
+#+HTML: </style>
+
 * All my posts
 
 #+HTML: <div class="sitemap">

@@ -1,5 +1,10 @@
 #+title: Page not found
 
+#+HTML: <style>
+#+HTML:   .metadata-container {display: none;}
+#+HTML:   footer {justify-content: right;}
+#+HTML: </style>
+
 * Error 404
 
 The page requested is nowhere to be found.

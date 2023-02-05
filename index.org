@@ -1,5 +1,11 @@
 #+title: My Website
 
+#+HTML: <style>
+#+HTML:   .metadata-container {display: none;}
+#+HTML:   footer {justify-content: right;}
+#+HTML: </style>
+
+
 * Who am i
 
 Hi there I'm Francesco, a random guy who lives in Italy. Here is a self portrait
