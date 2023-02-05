@@ -8,18 +8,18 @@
                             "<link rel=\"shortcut icon\" href=\"assets/favicon.ico\"/>\n"
                             "<meta content=\"width=device-width, initial-scale=1\" name=\"viewport\" />\n")
 
-      html-postamble  (concat "<footer>"
-                              "  <div class=\"metadata-container\">"
-                              "    <div class=\"created-on\">Created on: %d</div>"
-                              "    <div class=\"modified-on\">Last updated on: %C</div>"
-                              "  </div>"
+      html-postamble  (concat "<footer>\n"
+                              "  <div class=\"metadata-container\">\n"
+                              "    <div class=\"created-on\">Created on: <span class=\"created-date\">%d</span></div>\n"
+                              "    <div class=\"modified-on\">Last updated on: <span class=\"updated-date\">%C</span></div>\n"
+                              "  </div>\n"
                               "  <div class=\"license-container\">"
-                              "   <a rel=\"https://validator.w3.org/check?uri=referer\"><img src=\"/assets/valid_html_blue.png\"></a>"
-                              "   <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/\"><img alt=\"Creative Commons Licence\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-sa/4.0/80x15.png\" /></a>"
-                              "    <div class=\"author\">2022 - " (format-time-string "%Y") " Francesco Pozzoni."
-                              "    </div>"
-                              "  </div>"
-                              "</footer>")
+                              "   <a rel=\"validator\" href=\"https://validator.w3.org/check?uri=referer\"><img alt=\"W3 validator\" src=\"/assets/valid_html_blue.png\" /></a>\n"
+                              "   <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/\"><img alt=\"Creative Commons Licence\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-sa/4.0/80x15.png\" /></a>\n"
+                              "    <div class=\"author\">2022 - " (format-time-string "%Y") " Francesco Pozzoni.\n"
+                              "    </div>\n"
+                              "  </div>\n"
+                              "</footer>\n")
       
       org-html-postamble-format `(("en" ,html-postamble)))
 

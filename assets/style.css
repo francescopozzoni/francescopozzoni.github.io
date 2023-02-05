@@ -99,6 +99,14 @@ footer {
     justify-content: space-between;
 }
 
+.metadata-container {
+    text-align: left;
+}
+
+.created-date, .updated-date{
+    font-family: RobotoMono;
+}
+
 /* CONTENT */
 
 div.outline-2 {
@@ -201,7 +209,30 @@ figcaption {
         display: inline-block;
         float:initial
     }
+    
     div.timestamp::before {
-        content: " - "
+        content: " ("
+    }
+    
+    div.timestamp::after {
+        content: ")"
+    }
+
+    div.latest-posts > ul > li, div.sitemap > ul > li {
+        margin-bottom: 10px;
+    }
+
+    div.latest-posts > ul > li::before, div.sitemap > ul > li::before {
+        content: "- "
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    footer {
+        justify-content: right;
+        flex-direction: column;
+        padding-top: 20px;
+        row-gap: 20px;
     }
 }
