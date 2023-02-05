@@ -1,9 +1,9 @@
-#+HTML: <style>
-#+HTML:   .metadata-container {display: none;}
-#+HTML:   footer {justify-content: right;}
-#+HTML: </style>
-
 #+title: Page not found
+
+#+HTML_HEAD_EXTRA: <style>
+#+HTML_HEAD_EXTRA:   .metadata-container {display: none;}
+#+HTML_HEAD_EXTRA:   footer {justify-content: right;}
+#+HTML_HEAD_EXTRA: </style>
 
 * Error 404
 
